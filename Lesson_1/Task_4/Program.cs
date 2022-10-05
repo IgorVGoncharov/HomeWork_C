@@ -4,7 +4,7 @@ int start = 1;
 Console.Write("Все четные числа от 1 до N: ");
 while (start <= N)
 {
-    if (start%2 == 0)
+    if (start % 2 == 0)
     {
         if (start == 2)
         {
@@ -13,7 +13,7 @@ while (start <= N)
         else
         {
             Console.Write($", {start}");
-        }            
+        }
     }
     start = start + 1;
 }
