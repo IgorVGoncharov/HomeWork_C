@@ -3,7 +3,7 @@
 
 Console.Write("Введите трёхзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-int length = Convert.ToString(number).Length;
+iint length = Convert.ToString(number).Length;
 if (length != 3)
 {
     System.Console.WriteLine("Введено не трехзначное число!");
