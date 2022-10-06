@@ -3,19 +3,19 @@
 
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-int lenght = Convert.ToString(number).Length;
-int repit = 1;
-while (repit < lenght-2)
+if (number < 0)
 {
-    number = number / 10;
-    repit++;
+    number = number * (-1);
 }
-if (lenght < 3)
+if (number < 100)
 {
-    System.Console.WriteLine("Третьей цифры нет!");
+    System.Console.WriteLine("В введенном числе третьей цифры нет");
 }
 else
 {
-    System.Console.WriteLine($"Третья цифра заданного чисола: {number%10}");
+    while (number > 999)
+    {
+        number=number/10;
+    }
+    System.Console.WriteLine($"Третья цифра заданного числа: {number%10}");
 }
-

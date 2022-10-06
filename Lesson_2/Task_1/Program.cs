@@ -3,12 +3,12 @@
 
 Console.Write("Введите трёхзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-iint length = Convert.ToString(number).Length;
-if (length != 3)
+if (number > 99 && number <1000)
 {
-    System.Console.WriteLine("Введено не трехзначное число!");
+    System.Console.WriteLine($"Вторая цифра числа: {(number / 10) % 10}");
 }
 else
 {
-    System.Console.WriteLine((number / 10) % 10);
+    System.Console.WriteLine("Введено не трехзначное число!");
 }
+
