@@ -28,8 +28,8 @@ int square(int arg) // считает квадрат введенного чис
     return arg*arg;
 }
 
-int[] pointOne = InputPoin(1); // вводим координаты точки 1
-int[] pointTwo = InputPoin(2); // вводим координаты точки 2
+int[] pointOne = InputPoin(1); // вводим в массив координаты точки 1
+int[] pointTwo = InputPoin(2); // вводим в массив координаты точки 2
 
 double result = Math.Sqrt(square(pointTwo[x]-pointOne[x]) + square(pointTwo[y]-pointOne[y]) + square(pointTwo[z]-pointOne[z]));
 // считаем расстояние от точки 1 до точки 2 
