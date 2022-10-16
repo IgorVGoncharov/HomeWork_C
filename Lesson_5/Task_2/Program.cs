@@ -1,6 +1,5 @@
 ﻿// Задача 2: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
-// [3, 7, 23, 12] -> 19
-// [-4, -6, 89, 6] -> 0
+
 
 Console.Clear();
 
@@ -32,7 +31,7 @@ void PrintArray(int[] arr) // печать массива
     System.Console.WriteLine();
 }
 
-int SummOddElements(int[] arr)
+int SummOddElements(int[] arr) // подсчет суммы элементов, стоящих на нечетных позициях
 {
     int summ = 0;
     for (int i = 1; i < arr.Length; i = i + 2)
