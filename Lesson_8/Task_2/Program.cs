@@ -13,7 +13,7 @@ int promt(string message) // ввод числа с клавиатуры
 void PrintMultiArray(int[,] arr) // печать многомерного массива
 {
     System.Console.WriteLine();
-    System.Console.WriteLine("Двумерный массив случайных чисел:");
+    System.Console.WriteLine("Массив случайных чисел:");
     for (int i = 0; i < arr.GetLength(0); i++)
     {
         for (int j = 0; j < arr.GetLength(1); j++)
@@ -61,7 +61,7 @@ int FindMinSumStrig(int[,] arr) // возвращает строку с наим
     }
     return minstr;
 }
-
+  
 int line = promt("Введите число строк в массиве: ");
 int column = promt("Введите число столбцов в массиве: ");
 int[,] newarray = NewArray(line, column);
